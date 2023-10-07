@@ -1,6 +1,10 @@
---credits: Snip#3132
--- Editted By Creo ^ Credits to creator above
---Commands: move forward, -move backward, -move leftward, -move rightward, -shiftlock on, -shiftlock off, -stop moving, -dance, -dance1, -dance2, -dance3, -wave, -point, -laugh, -jump, -joke
+-- if your just here to steal code remove the tp stuff
+local newPosition = Vector3.new(176, 5, -32)
+
+local player = game.Players.LocalPlayer
+
+player.Character:SetPrimaryPartCFrame(CFrame.new(newPosition))
+
 local chat = function(MSG) -- creo thing
  game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(MSG, "All")
 end
@@ -354,6 +358,3 @@ messageDoneFiltering.OnClientEvent:Connect(function(message)
   print("loaded")
  
 end)
-
-
-
