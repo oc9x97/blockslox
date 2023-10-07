@@ -4,7 +4,8 @@
 local chat = function(MSG) -- creo thing
  game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(MSG, "All")
 end
-chat("Hello I am Blockslox Bot! I am in this game 24/7 say !cmds for commands!")
+chat("Hello I am Blockslox Bot! Say !cmds for commands!")
+wait(1)
 chat("Commands: -move forward, -move backward, -move leftward, -move rightward, -jump,")
 chat("-shiftlock on, -shiftlock off, -stop moving, -dance, -dance1, -dance2, -dance3, -cheer, -laugh, -reset, -cmds")
 local keys = {
